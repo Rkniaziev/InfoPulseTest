@@ -22,12 +22,13 @@ if __name__ == "__main__":
 
 
 def triangle_type_by_sides(a, b, c):
-    if a == b == c:
-        return "Equilateral triangle"
-    elif a != b != c:
-        return "Versatile triangle"
-    elif a == b or a == c or b == c:
-        return "Isosceles triangle"
+    if triangle(a, b, c):
+        if a == b == c:
+            return "Equilateral triangle"
+        elif a != b != c:
+            return "Versatile triangle"
+        elif a == b or a == c or b == c:
+            return "Isosceles triangle"
     else:
         return "Not a triangle"
 
